@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-textarea {
-  resize: none;
-}
-</style>
-</head>
-<body>
+<h1>ViceVersa</h1>
 
-<h1>The textarea element - Disable default resize option</h1>
-
-<p><label for="w3review">Review of W3Schools:</label></p>
-
-<textarea id="w3review" name="w3review" rows="4" cols="50">
-At w3school
-</textarea>
-
-</body>
-</html>
+<form action="{% url 'reverse'%}">
+  <textarea cols="50" rows="10" name="usertext"></textarea>
+    <br><br>
+    <input type="submit" value="Reverse!">
+</form>
